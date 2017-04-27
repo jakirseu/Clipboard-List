@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<?import javafx.collections.FXCollections?>
+<?import java.lang.String?>
+<GridPane fx:id="rootgrid" alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <padding><Insets bottom="25" left="25" right="25" top="25" /></padding>
+
+   <TextArea fx:id="textarea" prefHeight="600" prefWidth="${rootgrid.width}" wrapText="true" GridPane.rowIndex="1" />
+   <ChoiceBox fx:id="choicebox" value="Tab">
+      <items>
+         <FXCollections fx:factory="observableArrayList">
+            <String fx:value="Tab" />
+            <String fx:value="List" />
+
+         </FXCollections>
+      </items>
+   </ChoiceBox>
+   <GridPane alignment="CENTER" prefWidth="200.0" GridPane.rowIndex="3">
+      <padding><Insets top="25" /></padding>
+     <columnConstraints>
+       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="150.0" />
+       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="150.0" />
+       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="150.0" />
+
+     </columnConstraints>
+     <rowConstraints>
+       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+     </rowConstraints>
+      <children>
+         <Button fx:id="cut" GridPane.halignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" text="Cut" textAlignment="CENTER">
+            <font>
+               <Font size="24.0" />
+            </font></Button>
+         <Button fx:id="copy"  GridPane.halignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" text="Copy" textAlignment="CENTER" GridPane.columnIndex="1">
+            <font>
+               <Font size="24.0" />
+            </font></Button>
+         <Button fx:id="clean" GridPane.halignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" text="Clean" textAlignment="CENTER" GridPane.columnIndex="2">
+            <font>
+               <Font size="24.0" />
+            </font></Button>
+      </children>
+   </GridPane>
+
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+
+</GridPane>

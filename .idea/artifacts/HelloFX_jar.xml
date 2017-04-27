@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="HelloFX:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/HelloFX_jar</output-path>
+    <root id="archive" name="HelloFX.jar">
+      <element id="module-output" name="HelloFX" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/src/lib/system-hook-2.5.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
